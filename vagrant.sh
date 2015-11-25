@@ -20,6 +20,9 @@ wget https://raw.githubusercontent.com/mitchellh/vagrant/master/keys/vagrant.pub
 chown -R vagrant:vagrant ~vagrant/.ssh
 chmod 600 ~vagrant/.ssh/authorized_keys
 gpasswd -a vagrant sudo
+apt-get clean
+mount /dev/cdrom /mnt
+/mnt/VBoxLinuxAdditions.run
+umount /mnt
 apt-get purge -y $TEMP_PACKAGES
 apt-get autoremove -y --purge
-apt-get clean
