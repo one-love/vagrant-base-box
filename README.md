@@ -1,2 +1,1 @@
-# vagrant-base-box
-Debian base box
+# Deprecated, use https://atlas.hashicorp.com/debian/boxes/jessie64
